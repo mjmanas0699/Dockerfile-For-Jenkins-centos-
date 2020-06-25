@@ -13,3 +13,7 @@ RUN  yum -y install java-11-openjdk-devel && \
 CMD /etc/rc.d/init.d/jenkins start   && /bin/bash
 
 EXPOSE 8080
+
+#1- docker build -t jenkins:v1 . # >> Last (.) for current directory you can use your own path & then build the file
+#2- docker run -it --name cont_name -P jenkins:v1 # >> -P will automatically connect Available port with 8080 (Jenkins Port No.)
+#Cheers !
